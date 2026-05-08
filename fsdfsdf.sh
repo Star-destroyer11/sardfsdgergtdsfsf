@@ -972,7 +972,7 @@ attempt_dev_install() {
 }
 
 start_chard() {
-doas "sudo -i -u chronos -- bash -l -c 'clear; cd /home/chronos; cr'"
+cr
 }
 
 edit_pollen() {
