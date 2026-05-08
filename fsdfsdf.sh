@@ -93,7 +93,7 @@ locked_main() {
     while true; do
         echo -ne "\033]0;mushm\007"
         cat <<-EOF
-(1) Emergency Revert & Re-Enroll
+(1) Start Chard
 (2) Soft Disable Extensions
 (3) Hard Disable Extensions
 (4) Hard Enable Extensions
@@ -103,7 +103,7 @@ EOF
         swallow_stdin
         read -r -p "> (1-6): " choice
         case "$choice" in
-        1) runjob revert ;;
+        1) runjob start_chard ;;
         2) runjob softdisableext ;;
         3) runjob harddisableext ;;
         4) runjob hardenableext ;;
